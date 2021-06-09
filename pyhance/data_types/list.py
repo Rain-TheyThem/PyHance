@@ -5,4 +5,4 @@ class list_(list):
         for index in range(len(self.li)):
             if self.li[index] == item:
                 return item
-        raise 
+        raise ValueError("Item not in list")
