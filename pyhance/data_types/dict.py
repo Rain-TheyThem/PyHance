@@ -1,4 +1,4 @@
-class Dict(dict):
+class dictionary(dict):
     def __init__(self, key_value_pairs):
         self.d = dict(key_value_pairs)
 
