@@ -26,19 +26,19 @@ class dictionary(dict):
                 return {key: self.d[key]}
         raise IndexError("dictionary index out of range")
     
-    def index_of_key(self, key):
+    def key_index(self, key):
         for key_index, current_key in enumerate(self.d.keys()):
             if current_key == key:
                 return key_index
         raise IndexError("dictionary index out of range")
     
-    def index_of_value(self, value):
+    def value_index(self, value):
         for value_index, current_key in enumerate(self.d.values()):
             if current_key == value:
                 return value_index
         raise IndexError("dictionary index out of range")
     
-    def index_of_item(self, item):
+    def item_index(self, item):
         for item_index, current_key in enumerate(self.d.items()):
             if current_key == item:
                 return item_index
