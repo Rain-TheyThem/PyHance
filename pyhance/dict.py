@@ -13,6 +13,8 @@ class dictionary(dict):
         raise IndexError("dictionary index out of range")
 
     def value_at(self, index):
+        if type(index) != int:
+            raise TypeError(f"index parameter was expecting int, {type(index)} when was passed")
         if index < 0:
             index = len(self.d)
         for value_index, value in enumerate(self.d.values()):
@@ -21,6 +23,8 @@ class dictionary(dict):
         raise IndexError("dictionary index out of range")
 
     def item_at(self, index):
+        if type(index) != int:
+            raise TypeError(f"index parameter was expecting int, {type(index)} when was passed")
         if index < 0:
             index = len(self.d)
         for item_index, key in enumerate(self.d.keys()):
