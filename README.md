@@ -9,3 +9,4 @@ Some of the things PyHance does are:
     * `value_at()` method for finding a value by index
     * `item_at()` method for finding a key-value pair by index
 * Adds a `remove` method to a custom `string` class to remove an item from the string
+For more information on what this can do, [go to our wiki!]()
