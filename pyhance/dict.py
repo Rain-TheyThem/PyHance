@@ -32,16 +32,16 @@ class dictionary(dict):
         for key_index, current_key in enumerate(self.d.keys()):
             if current_key == key:
                 return key_index
-        raise IndexError("dictionary index out of range")
+        raise ValueError(f"'{key}'' not in dictionary")
     
     def value_index(self, value):
         for value_index, current_key in enumerate(self.d.values()):
             if current_key == value:
                 return value_index
-        raise IndexError("dictionary index out of range")
+        raise ValueError(f"'{value}' not in dictionary")
     
     def item_index(self, item):
         for item_index, current_key in enumerate(self.d.items()):
-            if current_key == item:
+            if {current_key[0]: self.d[current_key[0]]} == item:
                 return item_index
-        raise IndexError("dictionary index out of range")
+        raise ValueError(f"'{item}' not in dictionary")
