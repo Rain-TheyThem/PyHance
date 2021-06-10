@@ -3,6 +3,8 @@ class dictionary(dict):
         self.d = dict(key_value_pairs)
 
     def key_at(self, index):
+        if type(index) != int:
+            raise TypeError(f"index parameter was expecting int, {type(index)} when was passed")
         if index < 0:
             index = len(self.d)
         for key_index, key in enumerate(self.d.keys()):
