@@ -10,4 +10,4 @@ Some of the things PyHance does are:
     * `item_at()` method for finding a key-value pair by index
 * Adds a `remove` method to a custom `string` class to remove an item from the string
 
-For more information on what this can do, [go to our wiki!](https://github.com/IzaCoder/PyHance/wiki)
+For more information on what PyHance can do, [go to our wiki!](https://github.com/IzaCoder/PyHance/wiki)
