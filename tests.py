@@ -37,3 +37,11 @@ assert di.key_index("c") == 2
 assert di.key_index("d") == 3
 assert di.key_index("e") == 4
 assert di.key_index("f") == 5
+
+# value_index() tests
+assert di.value_index(1) == 0
+assert di.value_index(2) == 1
+assert di.value_index(3) == 2
+assert di.value_index(4) == 3
+assert di.value_index(5) == 4
+assert di.value_index(6) == 5
