@@ -1,11 +1,17 @@
 # destination: import village
 from pyhance.dict import dictionary as d
+from pyhance.list import list_ as l
 
 # declare dictionary for testing
 di = d({"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6})
 
+# declare list for testing
+li = l(["h", 1, 123, True, False, 3.14159265358, 2.1, [1], (2, 3)])
+
 # begin asserting!
 
+
+# tests for dict.py
 # key_at() tests
 assert di.key_at(0) == "a"
 assert di.key_at(1) == "b"
@@ -53,3 +59,9 @@ assert di.item_index({"c": 3}) == 2
 assert di.item_index({"d": 4}) == 3
 assert di.item_index({"e": 5}) == 4
 assert di.item_index({"f": 6}) == 5
+
+
+# tests for list.py
+
+# index_of() tests
+assert li.index_of("h") == 0
