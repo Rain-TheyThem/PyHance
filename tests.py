@@ -29,3 +29,11 @@ assert di.item_at(2) == {"c": 3}
 assert di.item_at(3) == {"d": 4}
 assert di.item_at(4) == {"e": 5}
 assert di.item_at(5) == {"f": 6}
+
+# di.key_index() tests
+assert di.key_index("a") == 0
+assert di.key_index("b") == 1
+assert di.key_index("c") == 2
+assert di.key_index("d") == 3
+assert di.key_index("e") == 4
+assert di.key_index("f") == 5
