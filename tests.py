@@ -45,3 +45,11 @@ assert di.value_index(3) == 2
 assert di.value_index(4) == 3
 assert di.value_index(5) == 4
 assert di.value_index(6) == 5
+
+# item_index() tests
+assert di.item_index({"a": 1}) == 0
+assert di.item_index({"b": 2}) == 1
+assert di.item_index({"c": 3}) == 2
+assert di.item_index({"d": 4}) == 3
+assert di.item_index({"e": 5}) == 4
+assert di.item_index({"f": 6}) == 5
