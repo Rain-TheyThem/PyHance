@@ -1,12 +1,16 @@
 # destination: import village
 from pyhance.dict import dictionary as d
 from pyhance.list import list_ as l
+from pyhance.string import string as s
 
 # declare dictionary for testing
 di = d({"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6})
 
 # declare list for testing
 li = l(["h", 1, 123, True, False, 3.14159265358, 2.1, [1], (2, 3)])
+
+# declare string for testing
+st = s("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
 
 # begin asserting!
 
@@ -72,3 +76,10 @@ assert li.index_of(3.14159265358) == 5
 assert li.index_of(2.1) == 6
 assert li.index_of([1]) == 7
 assert li.index_of((2, 3)) == 8
+
+# tests for string.py
+# remove tests
+assert st.remove("lorem") == st.replace("lorem", "")
+assert st.remove("ispum") == st.replace("ispum", "")
+assert st.remove("e") == st.replace("e", "")
+assert st.remove("i") == st.replace("i", "")
