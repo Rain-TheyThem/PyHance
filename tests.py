@@ -67,7 +67,7 @@ assert di.item_index({"f": 6}) == 5
 
 # tests for list.py
 # tests for remove_all method
-assert li.remove_all(True) == l(["h", 1, 123, False, 3.14159265358, 2.1, [1], (2, 3), 1, 123]
+assert li.remove_all(True) == l(["h", 1, 123, False, 3.14159265358, 2.1, [1], (2, 3), 1, 123])
 
 # tests for string.py
 # remove tests
