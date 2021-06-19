@@ -2,6 +2,7 @@
 from pyhance.dict import dictionary as d
 from pyhance.list import list_ as l
 from pyhance.string import string as s
+from pyhance.range import range_ as r
 
 # declare dictionary for testing
 di = d({"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6})
@@ -12,6 +13,13 @@ rtli = l(li.copy()).remove_all(True)
 
 # declare string for testing
 st = s("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+
+# declare ranges for testing
+stoponly = r(5)
+stopnstep = r(10, step=2)
+stopnstart = r(start=5, stop=10)
+stopstepnstart = r(start=4, stop=10, step=2)
+negstep = r(start=10, stop=0, step=-1)
 
 # begin asserting!
 
@@ -79,3 +87,7 @@ assert st.remove("i") == st.replace("i", "")
 
 # copy tests
 assert st.copy() == st
+
+
+# range_ tests
+assert stoponly == [0, 1, 2, 3, 4]
