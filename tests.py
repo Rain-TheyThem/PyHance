@@ -8,6 +8,7 @@ di = d({"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6})
 
 # declare list for testing
 li = l(["h", 1, 123, True, False, 3.14159265358, 2.1, [1], (2, 3), 1, 123, True, True])
+rtli = l(li.copy()).remove_all(True)
 
 # declare string for testing
 st = s("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
@@ -67,7 +68,7 @@ assert di.item_index({"f": 6}) == 5
 
 # tests for list.py
 # tests for remove_all method
-assert li.remove_all(True).li == l(["h", 1, 123, False, 3.14159265358, 2.1, [1], (2, 3), 1, 123])
+assert rtli == li.remove_all(True)
 
 # tests for string.py
 # remove tests
