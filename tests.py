@@ -7,7 +7,7 @@ from pyhance.string import string as s
 di = d({"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6})
 
 # declare list for testing
-li = l(["h", 1, 123, True, False, 3.14159265358, 2.1, [1], (2, 3)])
+li = l(["h", 1, 123, True, False, 3.14159265358, 2.1, [1], (2, 3), 1, 123, True, True])
 
 # declare string for testing
 st = s("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
@@ -64,6 +64,10 @@ assert di.item_index({"d": 4}) == 3
 assert di.item_index({"e": 5}) == 4
 assert di.item_index({"f": 6}) == 5
 
+
+# tests for list.py
+# tests for remove_all method
+assert li.remove_all(True) == l(["h", 1, 123, False, 3.14159265358, 2.1, [1], (2, 3), 1, 123]
 
 # tests for string.py
 # remove tests
