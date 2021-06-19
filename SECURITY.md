@@ -20,8 +20,10 @@ It will make it easier for us if your report conforms to the following structure
 4. If it's internal, what technology has the vulnerability?
 5. Do you have any suggestions on how to fix it?
 
+If you don't want to take as much time to write it out, use the *Security Issue* template.
+
 ### What tags to add
-Please add the *vulnerability* and *filename* tags to your report, with *filename* being the name of the file that the vulnerability was found in.
+Please add the *security* tag to your report.
 
 ### How to report
 Create an issue with the title "Security Vulnerability", and add the tags listed in the *What tags to add* section.
