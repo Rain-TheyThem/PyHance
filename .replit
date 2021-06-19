@@ -1,0 +1,4 @@
+name = "PyHance"
+language = "python3"
+run = "python main.py"
+onBoot = "tests.py"
