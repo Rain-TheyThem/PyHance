@@ -65,21 +65,12 @@ assert di.item_index({"e": 5}) == 4
 assert di.item_index({"f": 6}) == 5
 
 
-# tests for list.py
-# index_of() tests
-assert li.index_of("h") == 0
-assert li.index_of(1) == 1
-assert li.index_of(123) == 2
-assert li.index_of(True) == 3
-assert li.index_of(False) == 4
-assert li.index_of(3.14159265358) == 5
-assert li.index_of(2.1) == 6
-assert li.index_of([1]) == 7
-assert li.index_of((2, 3)) == 8
-
 # tests for string.py
 # remove tests
 assert st.remove("lorem") == st.replace("lorem", "")
 assert st.remove("ispum") == st.replace("ispum", "")
 assert st.remove("e") == st.replace("e", "")
 assert st.remove("i") == st.replace("i", "")
+
+# copy tests
+assert st.copy() == st
