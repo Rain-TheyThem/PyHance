@@ -6,8 +6,7 @@ class string(str):
         return self.s
     
     def remove(self, string):
-        self.s = self.s.replace(string, "")
-        return self.s
+        return self.s.replace(string, "")
     
     def copy(self):
         newstr = ""
