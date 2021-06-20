@@ -11,6 +11,5 @@ def range_(stop, start=0, step=1, inclusive=False):
         nums = []
         while i < stop:
             nums.append(i)
-            print(i)
             i += step
         return nums
