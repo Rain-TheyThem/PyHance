@@ -1,4 +1,4 @@
 name = "PyHance"
 language = "python3"
-run = "python main.py"
+run = "python tests.py"
 onBoot = "tests.py"
