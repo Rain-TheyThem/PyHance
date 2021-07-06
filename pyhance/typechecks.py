@@ -15,28 +15,22 @@ def rstr(obj):
 
 
 def rlist(obj):
-    if (
-        len([char for char in obj if char == "["])
-        and len([char for char in obj if char == "]"])
-    ) > 0:
+    if (len([char for char in obj if char == "["])
+            and len([char for char in obj if char == "]"])) > 0:
         return True
     return False
 
 
 def rtuple(obj):
-    if (
-        len([char for char in obj if char == "("])
-        and len([char for char in obj if char == ")"])
-    ) > 0:
+    if (len([char for char in obj if char == "("])
+            and len([char for char in obj if char == ")"])) > 0:
         return True
     return False
 
 
 def rdict(obj):
-    if (
-        len([char for char in obj if char == "{"])
-        and len([char for char in obj if char == "}"])
-    ) > 0:
+    if (len([char for char in obj if char == "{"])
+            and len([char for char in obj if char == "}"])) > 0:
         return True
     return False
 
