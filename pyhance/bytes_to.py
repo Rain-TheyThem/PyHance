@@ -1,4 +1,6 @@
-from pyhance import (string, list_, dictionary)
+from pyhance.string import string
+from pyhance.list import list_
+from pyhance.dict import dictionary
 
 
 def bytes_to(bytes_to_convert, datatype, method="little", byte_number=1):
