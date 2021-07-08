@@ -11,3 +11,5 @@ class string(str):
     def copy(self):
         newstr = ""
         return newstr.join(self.s)
+    def reverse(self, start=0, stop=-1, dtype=string):
+        return string[start:stop:-1]
