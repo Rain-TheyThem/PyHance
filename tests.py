@@ -1,4 +1,4 @@
-# destination: import village
+# destination: import town
 from pyhance.dict import dictionary as d
 from pyhance.list import list_ as l
 from pyhance.string import string as s
@@ -124,10 +124,20 @@ assert st.remove("i") == st.replace("i", "")
 
 # copy tests
 assert st.copy() == st
-assert s("Hello").copy() == "hey"
+assert s("Hello").copy() == "Hello"
 assert s("Hi").copy() == "Hi"
 assert s("Hey").copy() == "Hey"
 assert s("What's Up?").copy() == "What's Up?"
+
+# reverse tests
+assert s("Hello").reverse() == "Hello"[::-1]
+assert s("Hi").reverse() == "Hi"[::-1]
+assert s("Hey").reverse() == "Hey"[::-1]
+assert s("What's Up?").reverse() == "What's Up?"[::-1]
+
+assert s("Hello").reverse(start=2) == "Hello"[2::-1]
+assert s("Hey").reverse(stop=1) == "Hey"[:1:-1]
+assert s("What's Up?").reverse(start=3, stop=7) == "What's Up?"[3:7:-1]
 
 # range_ tests
 assert stoponly == range(5)
