@@ -5,14 +5,7 @@ from pyhance.string import string as s
 from pyhance.range import range_ as r
 
 # declare dictionary for testing
-di = d({
-    "a": 1,
-    "b": 2,
-    "c": 3,
-    "d": 4,
-    "e": 5,
-    "f": 6
-})
+di = d({"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6})
 
 # declare list for testing
 li = l([
@@ -22,43 +15,20 @@ li = l([
 rtli = l(li.copy()).remove_all(True)
 
 # declare string for testing
-st = s(
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-)
+st = s("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
 
 # declare ranges for testing
 stoponly = r(5)
 stopnstep = r(10, step=2)
 stopnstart = r(start=5, stop=10)
-stopstepnstart = r(
-    start=4,
-    stop=10,
-    step=2
-)
+stopstepnstart = r(start=4, stop=10, step=2)
 negstep = r(start=10, stop=0, step=-1)
 
 istoponly = r(5, inclusive=True)
-istopnstep = r(
-    10,
-    step=2,
-    inclusive=True
-)
-istopnstart = r(
-    start=5,
-    stop=10,
-    inclusive=True
-)
-istopstepnstart = r(
-    start=4,
-    stop=10,
-    step=2,
-    inclusive=True)
-inegstep = r(
-    start=10,
-    stop=0,
-    step=-1,
-    inclusive=True
-)
+istopnstep = r(10, step=2, inclusive=True)
+istopnstart = r(start=5, stop=10, inclusive=True)
+istopstepnstart = r(start=4, stop=10, step=2, inclusive=True)
+inegstep = r(start=10, stop=0, step=-1, inclusive=True)
 
 # begin asserting!
 
