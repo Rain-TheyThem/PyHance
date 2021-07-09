@@ -124,6 +124,10 @@ assert st.remove("i") == st.replace("i", "")
 
 # copy tests
 assert st.copy() == st
+assert s("Hello").copy() == "hey"
+assert s("Hi").copy() == "Hi"
+assert s("Hey").copy() == "Hey"
+assert s("What's Up?").copy() == "What's Up?"
 
 # range_ tests
 assert stoponly == range(5)
