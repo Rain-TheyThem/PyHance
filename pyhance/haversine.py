@@ -2,6 +2,9 @@ from math import sqrt
 
 
 def haversine(point1, point2, sigfigs=2):
+    """
+    A standalone function to find the distance between two points, passed as tuples
+    """
     hdist = (point2[0] - point1[0])**2
     vdist = (point2[1] - point1[1])**2
     distance = sqrt(hdist + vdist)
