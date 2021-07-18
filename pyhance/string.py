@@ -1,4 +1,7 @@
 class string(str):
+    """
+    A custom string class that keeps all of the methods of the built-in str class, while providing additional functionality.
+    """
     def __init__(self, string):
         self.s = str(string)
 
