@@ -4,6 +4,9 @@ from pyhance.dict import dictionary
 
 
 def bytes_to(bytes_to_convert, datatype, method="little", byte_number=1):
+    """
+    Convert a bytes object to the given data type.
+    """
     dtypes = (string, str, int)
 
     if datatype not in dtypes:
