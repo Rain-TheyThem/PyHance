@@ -1,6 +1,6 @@
 class dictionary(dict):
     """
-    An extension of the built-in dict data type. This class adds methods to:
+    An enhancement of the built-in dict data type. This class adds methods to:
     - index into the dictionary, with options to return the key, value, or key-value pair at the specified index
     - get the index of an item in the dictionary, with options to return the index of the key, value, or key-value pair specified
     """
