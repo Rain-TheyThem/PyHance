@@ -34,52 +34,52 @@ inegstep = r(start=10, stop=0, step=-1, inclusive=True)
 
 # tests for dict.py
 # key_at() tests
-assert di.key_at(0) == "a"
-assert di.key_at(1) == "b"
-assert di.key_at(2) == "c"
-assert di.key_at(3) == "d"
-assert di.key_at(4) == "e"
-assert di.key_at(5) == "f"
+assert di.item_at(0) == "a"
+assert di.item_at(1) == "b"
+assert di.item_at(2) == "c"
+assert di.item_at(3) == "d"
+assert di.item_at(4) == "e"
+assert di.item_at(5) == "f"
 
 # value_at() tests
-assert di.value_at(0) == 1
-assert di.value_at(1) == 2
-assert di.value_at(2) == 3
-assert di.value_at(3) == 4
-assert di.value_at(4) == 5
-assert di.value_at(5) == 6
+assert di.item_at(0, item_type="value") == 1
+assert di.item_at(1, item_type="value") == 2
+assert di.item_at(2, item_type="value") == 3
+assert di.item_at(3, item_type="value") == 4
+assert di.item_at(4, item_type="value") == 5
+assert di.item_at(5, item_type="value") == 6
 
 # item_at() tests
-assert di.item_at(0) == {"a": 1}
-assert di.item_at(1) == {"b": 2}
-assert di.item_at(2) == {"c": 3}
-assert di.item_at(3) == {"d": 4}
-assert di.item_at(4) == {"e": 5}
-assert di.item_at(5) == {"f": 6}
+assert di.item_at(0, item_type="pair") == {"a": 1}
+assert di.item_at(1, item_type="pair") == {"b": 2}
+assert di.item_at(2, item_type="pair") == {"c": 3}
+assert di.item_at(3, item_type="pair") == {"d": 4}
+assert di.item_at(4, item_type="pair") == {"e": 5}
+assert di.item_at(5, item_type="pair") == {"f": 6}
 
 # key_index() tests
-assert di.key_index("a") == 0
-assert di.key_index("b") == 1
-assert di.key_index("c") == 2
-assert di.key_index("d") == 3
-assert di.key_index("e") == 4
-assert di.key_index("f") == 5
+assert di.index_of("a") == 0
+assert di.index_of("b") == 1
+assert di.index_of("c") == 2
+assert di.index_of("d") == 3
+assert di.index_of("e") == 4
+assert di.index_of("f") == 5
 
 # value_index() tests
-assert di.value_index(1) == 0
-assert di.value_index(2) == 1
-assert di.value_index(3) == 2
-assert di.value_index(4) == 3
-assert di.value_index(5) == 4
-assert di.value_index(6) == 5
+assert di.index_of(1, item_type="value") == 0
+assert di.index_of(2, item_type="value") == 1
+assert di.index_of(3, item_type="value") == 2
+assert di.index_of(4, item_type="value") == 3
+assert di.index_of(5, item_type="value") == 4
+assert di.index_of(6, item_type="value") == 5
 
 # item_index() tests
-assert di.item_index({"a": 1}) == 0
-assert di.item_index({"b": 2}) == 1
-assert di.item_index({"c": 3}) == 2
-assert di.item_index({"d": 4}) == 3
-assert di.item_index({"e": 5}) == 4
-assert di.item_index({"f": 6}) == 5
+assert di.index_of({"a": 1}, item_type="pair") == 0
+assert di.index_of({"b": 2}, item_type="pair") == 1
+assert di.index_of({"c": 3}, item_type="pair") == 2
+assert di.index_of({"d": 4}, item_type="pair") == 3
+assert di.index_of({"e": 5}, item_type="pair") == 4
+assert di.index_of({"f": 6}, item_type="pair") == 5
 
 # tests for list.py
 # tests for remove_all method
