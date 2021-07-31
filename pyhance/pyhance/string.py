@@ -8,8 +8,11 @@ class string(str):
     def __repr__(self):
         return self.s
 
-    def remove(self, string):
-        return self.s.replace(string, "")
+    def remove(self, string, maxremovals=-1):
+        return self.s.replace(string, "", maxremovals)
+    
+    def reverse(self):
+        return self.s[::-1]
 
     def copy(self):
         newstr = ""
