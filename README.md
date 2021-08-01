@@ -11,3 +11,5 @@ Some of the things PyHance does are:
 * Adds a `remove` method to a custom `string` class to remove an item from the string
 
 For more information on what PyHance can do, [go to our wiki!](https://github.com/IzaCoder/PyHance/wiki)
+## Contributing
+To contribute to PyHance (which is welcome and appreciated), create an issue with your idea/bug fix. If it's a bug fix, I'll try to reproduce the bug on replit.com. If I can reproduce it, I will gladly work with you (or you can make a pull request on your own) to fix the bug! If it's a feature request, I'll review the requested feature and how it will fit in with the rest of PyHance. If it will make Python easier or more joyful to use, I'll gladly implement the feature! 
