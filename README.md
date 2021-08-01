@@ -13,3 +13,6 @@ Some of the things PyHance does are:
 For more information on what PyHance can do, [go to our wiki!](https://github.com/IzaCoder/PyHance/wiki)
 ## Contributing
 To contribute to PyHance (which is welcome and appreciated), create an issue with your idea/bug fix. If it's a bug fix, I'll try to reproduce the bug on replit.com. If I can reproduce it, I will gladly work with you (or you can make a pull request on your own) to fix the bug! If it's a feature request, I'll review the requested feature and how it will fit in with the rest of PyHance. If it will make Python easier or more joyful to use, I'll gladly implement the feature! 
+
+### Creating a bug report issue/pull request
+To create an issue/pull request about a bug, please use the issue/pull request template for bugs, and include detailed steps on how to reproduce the bug. If you are creating a pull request, make sure that your code doesn't break any other parts of PyHance. I will format the code to yapf standards with no configurations after the bug is fixed.
